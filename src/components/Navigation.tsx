@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import profileImage from '../assets/images/pro.jpg';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,7 @@ export default function Navigation() {
               <a href="#home" className="text-xl font-bold text-white" onClick={(e) => scrollToSection(e, '#home')}>
           </a>
           <img  
-          src="./src/assets/images/pro.jpg" 
+          src={profileImage}
           alt="Profile" 
           className="w-10 h-10 rounded-full object-cover border-2 border-gray-700 shadow-md "/>
           </div>
